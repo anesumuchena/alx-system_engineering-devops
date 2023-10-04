@@ -1,2 +1,2 @@
 #!/bin/bash
-set | env | tr -s ':' '\n' | sort -u
+(set | env | tr '\n' ':' | tr -s ':' '\n' | sort -u)
