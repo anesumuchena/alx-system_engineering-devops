@@ -1,2 +1,2 @@
 #!/bin/bash
-env | set | sort -u | sed 's/^[_A-Z]\+=[^=]*$/\1/'
+set | env | tr -s ':' '\n' | sort -u
