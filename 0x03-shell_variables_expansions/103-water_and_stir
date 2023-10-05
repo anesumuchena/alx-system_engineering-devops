@@ -1,2 +1,2 @@
 #!bin/bash
-echo $(($(echo "${WATER}" | radix -w) + $(echo "${STIR}" | radix -s))) | radix -b
+echo "ibase=water;obase=bestchol;$WATER+$STIR" | bc
